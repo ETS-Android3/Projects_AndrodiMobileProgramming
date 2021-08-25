@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="onClickPicture"
+            android:id="@+id/p_img"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:onClick="onClickName"
+                android:id="@+id/p_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Nome"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:onClick="onClickDescription"
+                android:id="@+id/p_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Descrizione"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:onClick="onClickPrice"
+            android:id="@+id/p_price"
+            android:textSize="50dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="45$" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
         tvContatore = findViewById(R.id.tvcontatore);
     }
 
-    private void onClickCaricaImmagine(View v) {
+    public void onClickCaricaImmagine(View v) {
         // Simuliamo un caricamento di 5 secondi
         try {
             Thread.sleep(5000);
@@ -55,8 +55,8 @@ public class MainActivity extends Activity {
 
     // questa funzione non potrà essere invocata durante il finto caricamento dell'immagine
     // poichè abbiamo un solo thread.
-    private void onClickContatore(View v) {
+    public void onClickContatore(View v) {
         contatore++;
-        tvContatore.setText(contatore);
+        tvContatore.setText(contatore + "");
     }
 }

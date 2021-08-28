@@ -12,9 +12,8 @@ import androidx.fragment.app.Fragment;
 
 public class MainActivity extends Activity implements FragmentAutori.AuthorSelectionListener {
 
-    Display display;
-    FragmentAutori fragmentAutori = new FragmentAutori();
-    FragmentCitazioni fragmentCitazioni = new FragmentCitazioni();
+    FragmentAutori fragmentAutori;
+    FragmentCitazioni fragmentCitazioni;
     FrameLayout frameContainer, frameAutori, frameCitazioni;
     FragmentManager fm;
     FragmentTransaction ft;
@@ -33,6 +32,8 @@ public class MainActivity extends Activity implements FragmentAutori.AuthorSelec
                 setContentView(R.layout.main_portrait);
                 frameContainer = findViewById(R.id.frame_container);
 
+                fragmentAutori = new FragmentAutori();
+
                 ft = fm.beginTransaction();
                 ft.replace(frameContainer.getId(), fragmentAutori);
                 ft.commit();
@@ -42,6 +43,9 @@ public class MainActivity extends Activity implements FragmentAutori.AuthorSelec
                 setContentView(R.layout.main_landscape);
                 frameAutori = findViewById(R.id.frame_autori);
                 frameCitazioni = findViewById(R.id.frame_citazioni);
+
+                fragmentAutori = new FragmentAutori();
+                fragmentCitazioni = new FragmentCitazioni();
 
                 ft = fm.beginTransaction();
                 ft.replace(frameAutori.getId(), fragmentAutori);
@@ -55,6 +59,8 @@ public class MainActivity extends Activity implements FragmentAutori.AuthorSelec
     @Override
     public void onAuthorSelection(int index) {
         if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            fragmentCitazioni = new FragmentCitazioni();
+
             ft = fm.beginTransaction();
             ft.replace(frameContainer.getId(), fragmentCitazioni);
             ft.addToBackStack(null);

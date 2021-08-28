@@ -18,7 +18,7 @@ public class FragmentCitazioni extends Fragment {
     public FragmentCitazioni() {
     }
 
-
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.layout_citazioni, container, false);
     }
@@ -33,6 +33,7 @@ public class FragmentCitazioni extends Fragment {
     }
 
     public void mostraCitazione(int index) {
+        System.out.println(index);
         if (index >= 0 && index < autori.length) {
             current_index = index;
             tvAutore.setText(autori[current_index]);

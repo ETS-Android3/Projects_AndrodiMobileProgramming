@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string-array name="Quesiti">
+        <item>2+2 fa 4?</item>
+        <item>La capitale del Brasile è rio?</item>
+        <item>L\'italia ha vinto i mondiali del 2006?</item>
+        <item>I naziskin hanno vinto l\'eurovision?</item>
+        <item>Il gallo fa le uova?</item>
+    </string-array>
+    <integer-array name="Risposte">
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+</resources>

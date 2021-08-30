@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EA9C"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Path: "
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/command"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/tv_path"
+        android:background="#F3C177"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="onClickLoad"
+            android:layout_margin="4dp"
+            android:text="load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:onClick="onClickSave"
+            android:layout_margin="4dp"
+            android:text="save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"/>
+
+        <EditText
+            android:id="@+id/edit_file_name"
+            android:hint="file name"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/command"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <EditText
+            android:layout_margin="4dp"
+            android:background="@color/white"
+            android:id="@+id/edit_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="edit file" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

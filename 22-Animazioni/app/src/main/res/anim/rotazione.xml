@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shareInterpolator="false">
+
+    <rotate
+        android:startOffset="0"
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:toDegrees="720"
+        android:pivotX="80%"
+        android:pivotY="80%"/>
+
+    <rotate
+        android:startOffset="2000"
+        android:duration="4000"
+        android:fromDegrees="720"
+        android:toDegrees="0"
+        android:pivotX="20%"
+        android:pivotY="20%"/>
+
+    <!--
+        startOffset - quando parte l'animazione
+        duration - quuanto dura l'animazione
+        fromDegress - grado di partenza
+        toDegress - grado di arrivo
+        pivotX e pivotY - punto in cui ruotare (50% è il centro)
+    -->
+
+
+</set>

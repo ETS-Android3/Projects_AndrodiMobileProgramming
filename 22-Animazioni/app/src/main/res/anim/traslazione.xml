@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate
+        android:startOffset="0"
+        android:duration="3000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="400"
+        android:toYDelta="0"/>
+
+    <translate
+        android:startOffset="3000"
+        android:duration="6000"
+        android:fromXDelta="400"
+        android:fromYDelta="0"
+        android:toXDelta="400"
+        android:toYDelta="400"/>
+
+
+
+
+    <!--
+        fromXDelta e fromYDelta specificano le coordinate di partenza
+        toXDelta e toYDelta specificano le coordinate di arrivo
+    -->
+
+</set>

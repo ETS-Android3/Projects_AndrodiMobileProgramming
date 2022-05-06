@@ -1,2 +1,2 @@
 # ProgettiMobileProgramming
-Repo con diversi progetti del corso di Mobile Programming dell'Università degli Studi di Salerno.
+This repo contains differents java project for android mobile application. These projects are relating to Mobile Programming course at UNISA.
